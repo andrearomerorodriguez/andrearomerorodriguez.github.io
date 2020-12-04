@@ -1,0 +1,680 @@
+
+
+  @font-face {
+    font-family: "Helvetica\ Neue\ LT\ 55\ Roman";
+    src: url("../type/Helvetica\ Neue\ LT\ 55\ Roman.ttf");
+  }
+
+  @font-face {
+    font-family: "Lato-Light";
+    src: url("../type/Lato-Light.ttf");
+  }
+
+  @font-face {
+    font-family: "Lato-Bold";
+    src: url("../type/Lato-Bold.ttf");
+  }
+  * {
+    font-family: "Helvetica\ Neue\ LT\ 55\ Roman";
+  }
+
+  body, html{
+    overflow-x: hidden;
+  }
+
+
+  h1{
+    font-size: 80px;
+    text-align: left;
+    margin-bottom: 60px;
+    line-height: 0.9;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h3{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+}
+    
+
+p{
+    font-size: 17px;
+    line-height: 1.2; 
+    font-family: "Lato-Light";
+   
+}
+
+li{
+    margin-left: 2em;
+    font-size: 16px;
+}
+
+a{text-decoration: none;
+  color: black;
+}
+/* header */
+.main-header {
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  
+}
+.main-header__wrapper {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.main-nav__ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.main-nav__item {
+  color: #939393;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  list-style-type: none;
+}
+.main-nav__item a:hover {
+  color: #FB7019;
+}
+.main-nav__item:not(first-child) {
+  margin-left: 24px;
+}
+
+.mobile-menu-button {
+  display: none;
+  cursor: pointer;
+}
+.mobile-menu-button span {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  margin-bottom: 6px;
+  background: #262626;
+  transition: all 0.4s ease-out;
+}
+
+.mobile-menu-button.active span:first-child {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+.mobile-menu-button.active span:last-child {
+  transform: rotate(45deg);
+  bottom: 8px;
+}
+.mobile-menu-button.active span:nth-child(2) {
+  opacity: 0;
+}
+
+/* fin header */
+
+.tachado {
+    position: relative;
+}
+ 
+.tachado:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 60%;
+    right: 0;
+    border-top: 0.6px solid;
+    border-color: black;
+}
+
+
+  #logo{
+      margin-left: 30px;
+      
+  }
+
+  .nav{
+    float: right;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  .nav a:hover {
+    cursor: pointer;
+    color: #FB7019;
+  }
+
+  .mobile-menu-button {
+    display: none;
+    cursor: pointer;
+  }
+  .mobile-menu-button span {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 2px;
+    margin-bottom: 6px;
+    background: #262626;
+    transition: all 0.4s ease-out;
+  }
+  
+  .mobile-menu-button.active span:first-child {
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  .mobile-menu-button.active span:last-child {
+    transform: rotate(45deg);
+    bottom: 8px;
+  }
+  .mobile-menu-button.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+#intro {
+  height: vh;
+}
+.contenido-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+} 
+
+.contenido-intro img{
+    max-width: 450px;
+}
+.texto-intro {
+    width: 45%;
+    
+}
+.descripcion{
+    font-size: 20px;
+    width: 70%;
+    padding-left: 150px;
+    line-height: 1.3;
+}
+.descubre-proyectos {
+    text-align:  center;
+    padding-top: 80px;
+}
+
+.descubre-proyectos h2{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.flecha {
+    fill: black;
+    position: relative ;
+    margin-top: 45px !important;
+    z-index: 1;
+    animation-name: animationMenu;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes animationMenu{
+  0%{
+    bottom: 3vw;
+  }
+  50%{
+    bottom: 2vw;
+  }
+  100%{
+    bottom: 3vw;
+  }
+}
+
+svg {
+  fill: black;
+
+}
+
+svg:hover {
+    fill:#FB7019;
+
+}
+
+
+
+  
+
+
+#proyectos{
+    padding-top: 70px;
+    
+}
+
+.fondo-pillcare {
+  cursor: pointer;
+    height: 770px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/pillcare.png");
+  }
+
+  .fondo-zappas {
+    cursor: pointer;
+    height: 770px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/zappas.png");
+  }
+
+  .fondo-tinder {
+    cursor: pointer;
+    height: 770px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/tinder.png");
+  }
+
+  
+
+  .info-proyecto{
+    padding-left: 50px;
+    padding-top: 600px;
+    display: flex;
+    align-items: flex-end;
+    
+  }
+
+  .info-proyecto p{
+      width: 210px;
+  }
+
+
+.fondo-pillcare h3{
+    color: black;
+}
+
+.texto_proyecto {
+    width: 300px;
+    color: white
+}
+
+
+
+
+
+    
+
+
+#sobremi{
+    padding-top: 150px;
+    margin: 0 auto;
+    max-width: 960px;
+
+}
+
+.texto_sobremi{
+    margin: 0 auto;
+    text-align: center;
+    width: 700px;
+}
+
+.texto_sobremi p{
+  margin-bottom: 20px;
+
+}
+
+.herramientas{
+
+  font-family: "Lato-Bold";
+  
+}
+
+
+#contacto{
+    padding-top: 130px;
+    padding-bottom: 150px;
+    margin: 0 auto;
+    
+
+}
+
+.iconos{
+    text-align: center;
+}
+
+.iconos svg{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+#contacto {
+  
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-image: url("../img/Ilustracion_contacto.jpg");
+    background-position: right;
+    
+  } 
+
+@media only screen and (max-width: 414px) {
+     
+  .main-nav {
+    visibility: hidden;
+    width: 0;
+    transition: all 0.4s ease-out;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    height: 100vh;
+    box-shadow: 0px 4px 12px -6px rgba(0, 0, 0, 0.2);
+  }
+  .main-nav__ul {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .main-nav__ul li {
+    margin: 0 0 32px 0 !important;
+  }
+  .main-nav.visible {
+    width: 100%;
+    background: white;
+    right: 0;
+    visibility: visible;
+    transition: all 0.8s ease-out;
+  }
+  .mobile-menu-button {
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+  }
+
+
+    
+
+    
+            
+    
+      
+    h1 {
+      font-size: 45px;
+      margin-bottom: 30px;
+      text-align: left;
+      padding-left: 20px;
+      padding-top: 70px;
+    }
+
+    h2{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    h3{
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: white;
+    }
+        
+    
+    p{
+        font-size: 16px;
+        line-height: 1.2; 
+        font-family: "Lato-Light";
+       
+    }
+
+
+        
+
+     #logo{
+            margin-left: 20px;
+            
+     }     
+    #logo img{
+        width: 120px;
+    }
+    .flecha {
+      fill: black;
+      position: relative ;
+      margin-top: 20px !important;
+      z-index: 1;
+      animation-name: animationMenu;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+  }
+    
+    .contenido-intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        flex-wrap: wrap;
+        
+    } 
+    .contenido-intro img{
+        max-width: 300px;
+        order: 1;
+        
+    }
+    .texto-intro {
+        width: 100%;
+        
+    }
+    .descripcion{
+        font-size: 16px;
+        width: 85%;
+        padding-left: 20px;
+        line-height: 1.3;
+    }
+
+    .descubre-proyectos {
+        text-align:  center;
+        padding-top: 40px;
+    }
+    .flecha{
+        width: 60px;
+    }
+    .descubre-proyectos h2{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .fondo-pillcare {
+        height: 750px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../img/pillcare_movil.png");
+      }
+    
+      .fondo-zappas {
+        height: 750px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../img/zappas_m.jpg");
+      }
+    
+      .fondo-tinder {
+        height: 750px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../img/tinder_movil\ copia.png");
+      }
+
+      .info-proyecto{
+        padding-left: 20px;
+        padding-top: 650px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        
+      }
+    
+      .info-proyecto p{
+          width: 210px;
+      }
+    
+    
+    .fondo-pillcare h3{
+        color: black;
+    }
+    
+    .texto_proyecto {
+        width: 300px;
+        color: white;
+    }
+
+    .info-proyecto img{
+        padding-right: 20px;
+    }
+
+    
+    .texto_sobremi{
+        margin: 0 auto;
+        text-align: center;
+        width: 300px;
+    }
+
+    #sobremi{
+        padding-top: 100px;
+        margin: 0 auto;
+        max-width: 960px;
+    
+    }
+    #contacto{
+        padding-top: 100px;
+        padding-bottom: 220px;
+        margin: 0 auto;
+    
+            background-repeat: no-repeat;
+            background-size: contain ;
+            background-image: url("../img/Ilustracion_contacto_m.jpg");
+            background-position: center;
+        
+    
+    }
+    .iconos svg{
+        padding-left:  10px;
+        padding-right: 10px;
+    }
+
+    
+
+
+    
+  }
+  ​
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+
+    h1 {
+      font-size: 45px;
+      margin-bottom: 30px;
+      text-align: left;
+      padding-left: 20px;
+      padding-top: 70px;
+    }
+
+    h2{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    h3{
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: white;
+    }
+        
+    
+    p{
+        font-size: 16px;
+        line-height: 1.2; 
+        font-family: "Lato-Light";
+       
+    }
+
+
+        
+
+     #logo{
+            margin-left: 20px;
+            
+     }     
+    #logo img{
+        width: 120px;
+    }
+    .flecha {
+      fill: black;
+      position: relative ;
+      margin-top: 20px !important;
+      z-index: 1;
+      animation-name: animationMenu;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+  }
+    
+    .contenido-intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        flex-wrap: wrap;
+        
+    } 
+    .contenido-intro img{
+        max-width: 300px;
+        order: 1;
+        
+    }
+    .texto-intro {
+        width: 100%;
+        
+    }
+    .descripcion{
+        font-size: 16px;
+        width: 85%;
+        padding-left: 20px;
+        line-height: 1.3;
+    }
+
+    .descubre-proyectos {
+        text-align:  center;
+        padding-top: 40px;
+    }
+    .flecha{
+        width: 60px;
+    }
+    .descubre-proyectos h2{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+  }
+  ​
+  ​
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+  }
+  ​
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    
+  }
+  ​
+  @media only screen and (min-width: 1441px) {
+    
+  
