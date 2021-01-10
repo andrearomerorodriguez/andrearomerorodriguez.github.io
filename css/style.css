@@ -271,7 +271,16 @@ svg:hover {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../img/zappas.png");
+    background-image: url("../img/BannerPrincipal_zappas.jpg");
+  }
+
+  .fondo-recrea {
+    cursor: pointer;
+    height: 770px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/recrea.jpg");
   }
 
   .fondo-tinder {
@@ -302,6 +311,10 @@ svg:hover {
     color: black;
 }
 
+.fondo-recrea h3{
+  color: black;
+}
+
 .texto_proyecto {
     width: 300px;
     color: white
@@ -324,7 +337,7 @@ svg:hover {
 .texto_sobremi{
     margin: 0 auto;
     text-align: center;
-    width: 700px;
+    width: 740px;
 }
 
 .texto_sobremi p{
